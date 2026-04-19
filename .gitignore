@@ -1,0 +1,21 @@
+# Trọng số mô hình (Model files)
+*.pt
+*.pth
+
+# Biểu đồ đánh giá (Plots and Images)
+*.png
+
+# Python cache và virtual environment
+__pycache__/
+*.pyc
+venv/
+ai_project/
+
+# Các file dữ liệu nén, data lớn, hoặc trọng số khác
+*.zip
+*.rar
+*.7z
+*.csv
+*.h5
+*.npy
+*.safetensors
