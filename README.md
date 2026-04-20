@@ -90,3 +90,44 @@ DeepLearning-Radar-Signal-Classification/
 
 ## 🚀 Running the Project
 Once the environment is configured and the dataset is placed in the `data/raw` folder, you can configure your training scripts (e.g., updating paths in your config file) and begin training the CNN model.
+## 🧠 Model Architecture
+
+The custom CNN architecture is designed to be highly efficient (<100k parameters) while extracting robust spatial features from spectrograms. 
+
+*(Nếu bạn đã chuyển file basiccnn.pdf thành ảnh png, hãy bỏ comment dòng dưới đây)*
+---
+
+## 🖼️ Spectrogram Data Examples
+
+Raw 1D RF signals are converted into 2D spectrograms for the CNN to process. Here are examples of different signal modulations:
+
+<div align="center">
+  <img src="assets/BPSK.png" width="30%" alt="BPSK Spectrogram">
+  <img src="assets/BARKER.png" width="30%" alt="Barker Spectrogram">
+</div>
+
+---
+
+## 📊 Results & Performance
+
+The model achieved an **Overall Accuracy of 91.83%** on the validation set, demonstrating strong generalization capabilities across various modulation schemes.
+
+### Training & Validation Curves
+The learning curves indicate stable convergence without significant overfitting, thanks to robust data augmentation and learning rate scheduling.
+
+<div align="center">
+  <img src="assets/accuracy_chart_1.png" width="48%" alt="Accuracy Curve">
+  <img src="assets/loss_chart_1.png" width="48%" alt="Loss Curve">
+</div>
+
+### Evaluation Metrics
+Detailed precision, recall, and f1-scores across all signal classes:
+
+![Classification Report](assets/data%20augmentation.png)
+
+### Confusion Matrix
+The confusion matrix highlights the model's precise classification capabilities and reveals specific areas of minor misclassification between closely related signal types.
+
+<div align="center">
+  <img src="assets/confusion_matrix_result.png" width="80%" alt="Confusion Matrix">
+</div>
