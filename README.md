@@ -93,8 +93,6 @@ Once the environment is configured and the dataset is placed in the `data/raw` f
 ## 🧠 Model Architecture
 
 The custom CNN architecture is designed to be highly efficient (<100k parameters) while extracting robust spatial features from spectrograms. 
-
-*(Nếu bạn đã chuyển file basiccnn.pdf thành ảnh png, hãy bỏ comment dòng dưới đây)*
 ---
 
 ## 🖼️ Spectrogram Data Examples
