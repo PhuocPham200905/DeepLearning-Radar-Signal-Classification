@@ -3,7 +3,9 @@
 *.pth
 
 # Biểu đồ đánh giá (Plots and Images)
-*.png
+loss_plot.png
+acc_plot.png
+confusion_matrix.png
 
 # Python cache và virtual environment
 __pycache__/
